@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title> Treasure Hunt Game </title>
+        <link rel="stylesheet" href="treasurehunt.css">
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Mountains+of+Christmas&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Treasure Hunt Game</h1>
+        <div id="chest">
+            <img src="https://pngimage.net/wp-content/uploads/2018/06/skattekiste-png-4.png" alt="" height="250 px">
+        </div>
+        <h3>Game Rules</h3>
+            <ul>
+                <li>Click on one of the question marks below</li>
+                <li>If you find the treasure you win!</li>
+                <li>If you find the bomb you lose!</li>
+            </ul>
+        <div id="treasuretable">
+        <table>
+            <tr>
+                <td id=0 onclick="treasure(0)">?</td>
+                <td id=1 onclick="treasure(1)">?</td>
+                <td id=2 onclick="treasure(2)">?</td>
+            </tr>
+            <tr>
+                <td id=3 onclick="treasure(3)">?</td>
+                <td id=4 onclick="treasure(4)">?</td>
+                <td id=5 onclick="treasure(5)">?</td>
+            </tr>
+            <tr>
+                <td id=6 onclick="treasure(6)">?</td>
+                <td id=7 onclick="treasure(7)">?</td>
+                <td id=8 onclick="treasure(8)">?</td>
+            </tr>
+
+        </table>
+        </div>
+        <br />
+        <h2 id="outcome">Game is Ongoing, Keep Playing</h2>
+        <h3 id="turns">Lives Left</h3>
+        <h3 id="count">10</h3>
+        <button type="button" onclick="location.reload()">Restart Game</button>
+        <br />
+        <br />
+        <footer> &copy | Jumpstart </footer>
+
+        <script type="text/javascript" src="treasurehunt.js"></script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+body{
+    text-align:center;
+    background-image: url("https://www.maxpixel.net/static/photo/1x/Old-Frame-File-Worn-File-Units-Parchment-Paper-473630.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+h1{
+    color:#FBEA6D;
+    border-style:dashed;
+    border-color:#FBEA6D;
+    border-radius:25px;
+    font-size:48pt;
+
+}
+
+h2{
+    font-size:36pt;
+}
+h3{
+    font-size:28pt;
+}
+table{
+    border-style:ridge;
+    border-color:#4D1A10;
+    width: 333px;
+    height:333px;
+    table-layout:fixed;
+}
+th, td {
+     border: 1px solid #4D1A10;
+}
+
+td:hover{
+    font-size:40px;
+    color:#F8192A;
+}
+ul{
+    list-style-type:circle;
+    text-align:center;
+    list-style-position: inside;
+    font-size:18pt;
+}
+ul:hover{
+    list-style-type: disc;
+}
+#treasuretable{
+    display:flex;
+    text-align:center;
+    justify-content:center;
+}
+
+#chest{
+    animation : chest 4s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes chest {
+    25%{
+        margin-left: 10%;
+        margin-right: 70%;
+    }
+    50%{
+        margin-left:40%;
+        margin-right:40%;
+        transform:rotate(15deg)
+    }
+    75%{
+        margin-left:60%;
+        margin-right:20%;
+    }
+}
